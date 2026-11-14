@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=SD Import (Rust)
+Comment=Import photos and videos from SD cards into the Photo & Video library
+Exec=sd-import-rust
+Icon=camera-photo
+Terminal=false
+Categories=Graphics;Photography;

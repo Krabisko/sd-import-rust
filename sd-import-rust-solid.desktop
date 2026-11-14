@@ -1,0 +1,9 @@
+[Desktop Entry]
+X-KDE-Solid-Predicate=[ StorageVolume.ignored == false AND StorageVolume.usage == 'FileSystem' ]
+Type=Service
+Actions=import;
+
+[Desktop Action import]
+Exec=sd-import-rust "%f"
+Icon=camera-photo
+Name=Import photos & videos (SD Import, Rust)

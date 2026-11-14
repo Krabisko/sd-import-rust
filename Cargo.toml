@@ -1,0 +1,23 @@
+[package]
+name = "sd-import-rust"
+version = "0.1.0"
+edition = "2021"
+description = "Import photos, videos and other files from SD cards into a photo/video library"
+repository = "https://github.com/Krabisko/sd-import-rust"
+readme = "README.md"
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+clap = { version = "4", features = ["derive"] }
+ctrlc = "3"
+libc = "0.2"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+shlex = "1.3"
+
+[dev-dependencies]
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1
